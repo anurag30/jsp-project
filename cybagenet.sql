@@ -17,9 +17,11 @@ create table books (bookid int primary key AUTO_INCREMENT,bookname varchar(30),b
 create table review (bookid int,bookname varchar(20),review varchar(100),name varchar(20) ,foreign key (bookid) references books(bookid));
 
 
-insert into login values('admin','admin','admin');
+insert into login values('admin',MD5('admin'),'admin');
 
-insert into login values('ram','ram','user');
+insert into login values('master',MD5('master'),'admin');
+
+insert into login values('ram',MD5('ram'),'user');
 
 insert into books values (1,'java',500,'katy',6);
 
