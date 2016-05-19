@@ -25,4 +25,6 @@ insert into login values('ram',MD5('ram'),'user');
 
 insert into books values (1,'java',500,'katy',6);
 
+insert into books values (2,'C',600,'yashwant',5);
+
 insert into review values(1,'java','good book','admin');
